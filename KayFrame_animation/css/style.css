@@ -1,0 +1,36 @@
+@import "reset.css";
+
+body{
+	max-width: 1366px;
+}
+.wrapper {
+	max-width: 1200px;
+	
+}
+
+.content{
+	width: 100%;
+}
+
+.content_circle {
+	position: relative;
+	width: 650px;
+	height: 650px;
+	background-color: blueviolet;
+	border-radius: 50%;
+	animation: purple_circle  1.5s linear infinite alternate 0s forwards;
+}
+
+@keyframes purple_circle{
+	0%{
+		top: 0;
+		left: 0;
+
+	}
+	100%{
+		top: 500px;
+		left: 500px;
+		background-color: red;
+		border-radius: 0%;
+	}
+}
